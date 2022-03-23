@@ -182,7 +182,7 @@ V_reduced = [A0, A1, A2, A3, A4; Q0, Q1, Q2, 0, 0; B0, B1, B2, 0, 0; C0, C1, C2,
 phi_calc_reduced = double(1+B_phi*V_reduced*T_phi);
 gamma_calc_reduced = double(exp(B_gamma*V_reduced*T_gamma));
 
-%{
+
 %------ Plotting
 %Phi as a function of b and T
 figure(1)
@@ -198,8 +198,8 @@ ylabel( 'b (mol/kg)', 'Interpreter', 'none' );
 zlabel( 'phi', 'Interpreter', 'none' );
 view( -53.2, 26.2 );
 hold off
-%}
-%{
+
+
 gamma_KCl_calc = horzcat(b_gamma, gamma_calc_reduced);
 writematrix(gamma_KCl_calc,'gammaKClCalc.csv')
 gamma_KCl_exp = horzcat(b_gamma, gamma);
@@ -217,7 +217,9 @@ residuals_phi= horzcat(b_phi, residuals_phi_KCl);
 residuals_gamma= horzcat(b_gamma, residuals_gamma_KCl);
 writematrix(residuals_phi,'phiKClresiduals.csv') 
 writematrix(residuals_gamma,'gammaKClresiduals.csv')
-%}
+
+
+%{
 
 %-------SECTION 2: FREEZING POINT
 
@@ -277,3 +279,5 @@ plot(b_phi, phi_fp, b_phi, phi(:,5))
 
 phi_KCl_fp = horzcat(b_phi, phi_fp, phi(:,5));
 writematrix(phi_KCl_fp ,'phiKClFP.csv')
+
+%}
