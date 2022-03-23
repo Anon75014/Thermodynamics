@@ -11,11 +11,11 @@ The relevant .txt files, which compile data from the literature (referenced in t
 
 Figure 4, p.11:
 
-The figure is plotted using LaTeX tikz, calling the relevant .csv files (gammaNaClCalc.csv, gammaNaClExp.csv, gammaNaClResiduals.csv, phiNaClCalc.csv, phiNaClExp.csv and phiNaClResiduals.csv).
-
-In the NaCl folder, the .csv files are generated from GammaNaClValidation.m and PhiNaClValidation.m, respectively, which call the relevant .txt files which compile data from the literature (referenced in the paper)
+The figure is plotted using LaTeX tikz, calling the relevant .csv files in the NaCl folder, : phiNaClCalc.csv and phiNaClExp.csv for figure 4a, gammaNaClCalc.csv and gammaNaClExp.csv for figure 4b, and gammaNaClResiduals.csv and phiNaClResiduals.csv for figure C6.
+The .csv files themselves are generated from GammaNaClValidation.m and PhiNaClValidation.m, respectively, 
+In turn, the matlab programs are parametrised from ReferenceActivityNaCl_clean.txt and ReferenceOsmoticNaCl_clean_2.txt. These text files were created from manual compilation of the fitting datasets, taken as reported from  the peer-reviewed punlications cited in the manuscript.
 
 Figure 5, p.12:
 
-Same as the previous figure, the .csv files were generated from VirialMatrix_KCl.m and VirialMatrix_CaCl.m, in the KCl and CaCl2 folders
+Same as the previous figure, the .csv files were generated from VirialMatrix_KCl.m and VirialMatrix_CaCl2.m, in the KCl and CaCl2 folders, respectively
 
