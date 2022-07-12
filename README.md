@@ -200,6 +200,8 @@ Data = readmatrix('Data_NaCl.txt');
 
 The formulas described in the manuscript are applied to calculate the activity coefficient and osmotic coefficient from this input data. For the complete virial matrix, coefficients were hard-coded from the paper of Clarke et al. into the Matlab code.
 
+Figure 2 is generated using the VisulaisationSurfaceXX.m" files.
+
 For the reduced virial matrix, the procedure makes use of the MATLAB curve fitting tool (cftool in the command line) and the files "ReducedMatrixFitEnthalpy.m", "ReducedMatrixFitHeatCapacity.m" and "ReducedMatrixFitOsmoticCoefficient.m".
 
 #KCl and CaCl2 folders
